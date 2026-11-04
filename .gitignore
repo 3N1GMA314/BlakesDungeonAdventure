@@ -5,14 +5,14 @@ out/
 .kotlin
 
 ### Maven generated files ###
- /target/
+/target/
 
 ### Application log files ###
- /logs/
+/logs/
 
 ### IntelliJ project settings ###
- /.idea/
- *.iml
+/.idea/
+*.iml
 
 
 
