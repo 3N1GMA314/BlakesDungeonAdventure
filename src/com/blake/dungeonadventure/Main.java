@@ -80,6 +80,20 @@ public class Main {
          // Demonstrates accessing an inherited protected
          // field through a method in the Player class.
          player.showHealth();
+
+         // --------------------------------------------
+         // Project 2: Exception handling demonstration
+         // ---------------------------------------------
+         System.out.println("\n=== Exception Handling Test ===");
+
+         GameInput gameInput = new GameInput();
+
+        // Valid input
+         gameInput.getPlayerChoice("2");
+
+        // Invalid input
+         gameInput.getPlayerChoice("hello");
+
      }
 }
 
