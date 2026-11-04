@@ -1,0 +1,35 @@
+Project 2 – GitHub, Exception Handling, and Logging
+
+Blake's Dungeon Adventure
+
+GitHub Repository:
+https://github.com/3N1GMA314/BlakesDungeonAdventure
+
+Branching Strategy
+
+I created a main branch to keep my working code and a feature/exception-handling branch to make and test changes.
+I used GitHub Desktop to save my changes, upload my code, download updates, and merge the branches.
+
+Merge Conflicts and Problems
+
+I did not have any merge conflicts while working on this project.
+However, I had some problems setting up GitHub and connecting it to IntelliJ.
+I fixed these problems by making sure both programs were using the same project folder.
+
+I also had problems with extra files being uploaded to GitHub.
+I fixed this by updating my .gitignore file and removing files that did not need to be saved on GitHub.
+
+Reverting Changes
+
+I made a temporary change to my Java code and saved it to GitHub.
+I then used GitHub Desktop to undo that change and return the code to how it was before.
+
+Exception Handling
+
+I created a GameInput class that uses try-catch-finally to handle incorrect player input.
+I tested it with both numbers and letters to make sure the program could handle errors without crashing.
+
+Log4j Logging
+
+I added Log4j to keep a record of what happens while the game runs.
+I tested it and confirmed that it saves messages and errors to the console and a file called dungeon.log.
