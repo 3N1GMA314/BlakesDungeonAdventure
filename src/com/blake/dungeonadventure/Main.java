@@ -7,8 +7,6 @@ public class Main {
          System.out.println("=== Blake's Dungeon Adventure ===");
          System.out.println("Welcome to the dungeon!");
 
-         System.out.println("This is a temporary Git test message.");
-
          Player player = new Player();
          Enemy enemy = new Enemy();
 
