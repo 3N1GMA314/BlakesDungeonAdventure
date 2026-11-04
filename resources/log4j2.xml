@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Appenders>
+        <!-- Writes game activity to a text file. -->
+        <File name="GameFile"
+              fileName="logs/dungeon.log"
+              append="true">
+            <PatternLayout
+                    pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{1} - %msg%n"/>
+        </File>
+
+        <!-- Also displays log messages in IntelliJ. -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%level - %msg%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="GameFile"/>
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
