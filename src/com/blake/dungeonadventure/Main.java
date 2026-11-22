@@ -94,6 +94,32 @@ public class Main {
         // Invalid input
          gameInput.getPlayerChoice("hello");
 
+         // ------------------------------------------
+         // Project 3: Interface Demonstration
+         // ------------------------------------------
+
+         System.out.println("\n=== Game Actions Test ===");
+
+         // Test the methods from GameActions.
+         player.attack();
+         player.defend();
+         player.explore();
+         player.rest();
+
+         // ------------------------------------------
+         // Project 3: Immutable Class Demonstration
+         // ------------------------------------------
+
+         System.out.println("\n=== Game Settings Test ===");
+
+         // Create settings that cannot be changed.
+         GameSettings settings = new GameSettings(100, 10);
+
+         // Display the game settings.
+         System.out.println("Starting Health: " + settings.getStartingHealth());
+         System.out.println("Maximum Rooms: " + settings.getMaxRooms());
+
+
      }
 }
 

@@ -2,21 +2,22 @@ package com.blake.dungeonadventure;
 
 import java.util.ArrayList;
 
-public class Player extends GameCharacter {
+public class Player extends GameCharacter implements GameActions {
 
     private WeaponType weapon = WeaponType.SWORD;
 
     // Overrides Java's built-in toString() method.
-    // Provides useful information about player.
+    // Provides useful information about the player.
     @Override
     public String toString() {
         return "Player's equipped weapon: " + weapon;
     }
 
-
     // Each player has their own inventory.
     private final Inventory inventory = new Inventory();
 
+    // Overrides the attack method from GameCharacter
+    // and implements the method from GameActions.
     @Override
     public void attack() {
         System.out.println("The player attacks with a " + weapon + "!");
@@ -62,5 +63,25 @@ public class Player extends GameCharacter {
                 System.out.println("- " + item);
             }
         }
+
     }
+
+    // Allows the player to defend against an attack.
+    @Override
+    public void defend() {
+        System.out.println("The player prepares to defend!");
+    }
+
+    // Allows the player to explore the dungeon.
+    @Override
+    public void explore() {
+        System.out.println("The player explores the dungeon.");
+    }
+
+    // Allows the player to rest.
+    @Override
+    public void rest() {
+        System.out.println("The player takes a short rest.");
+    }
+
 }
